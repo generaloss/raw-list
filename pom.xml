@@ -6,10 +6,10 @@
     <groupId>io.github.generaloss</groupId>
     <artifactId>raw-list</artifactId>
     <version>25.8.1-SNAPSHOT-1</version>
-    <name>raw-list</name>
+    <name>${artifactId}</name>
 
     <description>Primitives Lists Library</description>
-    <url>https://github.com/generaloss/raw-list</url>
+    <url>https://github.com/generaloss/${artifactId}</url>
 
     <dependencies>
         <!-- test -->
@@ -28,9 +28,9 @@
     </properties>
 
     <scm>
-        <connection>scm:git:git://github.com/generaloss/raw-list.git</connection>
-        <developerConnection>scm:git:ssh://github.com:generaloss/raw-list.git</developerConnection>
-        <url>https://github.com/generaloss/raw-list/tree/master</url>
+        <connection>scm:git:git://github.com/generaloss/${artifactId}.git</connection>
+        <developerConnection>scm:git:ssh://github.com:generaloss/${artifactId}.git</developerConnection>
+        <url>https://github.com/generaloss/${artifactId}/tree/master</url>
     </scm>
 
     <developers>
@@ -104,6 +104,7 @@
                 <version>0.3.0</version>
                 <extensions>true</extensions>
                 <configuration>
+                    <deploymentName>${artifactId}:${version}</deploymentName>
                     <publishingServerId>central</publishingServerId>
                     <tokenAuth>true</tokenAuth>
                 </configuration>
